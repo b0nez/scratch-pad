@@ -7,11 +7,22 @@ The scratch-pad project is a Node.js project, which means we write and execute J
 
 ## Installation
 
+### Fork on GitHub
+
+First things first, you MUST fork this repository to your personal GitHub account. You MUST also set up your fork to have the original Operation Spark scratch-pad as an upstream repository so you can pull changes in the feature.
+
+1. https://help.github.com/articles/fork-a-repo/
+2. https://help.github.com/articles/fork-a-repo/#keep-your-fork-synced
+
+This all sounds more confusing than it is, but ask for help if your lost.
+
+### Setup your Cloud9 Workspace
+
 On the **Create New Workspace** page of Cloud9, SSH clone this repository into a new Cloud9 workspace by pasting the SSH git clone URL into the **Clone from Git or Mercurial URL** form field, then click the green **Create workspace** button.  You do not need select any Cloud9 workspace template, ie, HTML5, Node.js - the workspace will be automatically setup for you.
 
 You can fork it first if you want to push your changes back to GitHub, but it's not necessary - your Cloud9 workspace will keep save your work.
 
-## Share your Workspace with your Instructors
+### Share your Workspace with your Instructors
 
 Once you've cloned and created your Cloud9 workspace for the scratch-pad, it's time to share your workspace with your instructors so they can evaluate and pair program with you.
 
@@ -54,3 +65,19 @@ It is extremely important for you to begin debugging as you work. It's important
 
 ## Homework
 
+Your homework assignments are located in JavaScript files (.js) in the directory `homework/module-x`, where `x` is whatever module you are currently undertaking.
+
+The assignments are ordered, so on day one of the module, start with the JavaScript file that begins with one, ie, `one-contact-list.js`. On day two, you will complete the assignment in the file, `two-x.js`, where `x` is the name of the assignment.
+
+As you code your solutions and save your work, you have three options for running your code:
+
+1. The coolest way is to run your work against the unit-tests. Go to the bash terminal and run the following command:
+        npm test
+    
+This will run all the unit tests for the homework. You can use `console.log()` to inspect and debug your work as you go. You will not be able to use the debugger with this option, so that is why `console.log()` is your way to see inspect your work.
+
+2. To use the debugger and breakpoints and _step thru_ your code, you can run your code by **having the file selected in the text-editor** and clicking the green **Run** button. This will open up a new process in the console view that will output your log statements. Breakpoints will be caught by the debugger and you can step through and insptect your code at runtime.
+3. You can also run the file straight from the command-line, for example, by running:
+        ./homework/module-one/one-contact-list.js
+
+You MUST submit your homework by 5:30pm the day it is due by doing a pull request.  See detailed instructions in our Bootcamp on how to submit your homework by doing a pull request, or, ask for help.
