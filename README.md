@@ -3,28 +3,27 @@ A blank node app for learning JavaScript!
 
 ## JavaScript Only
 
-The scratch-pad project is a Node.js project, which means we write and execute JavaScript independent of a browser in the stand-alone Node.js runtime.  In otherwords, it's _just_ JavaScript - there's no HTML or CSS, and there's no visual aspect to the program except output to the console, which pipes its output to the command-line.
+The scratch-pad project is a Node.js project, which means we write and execute JavaScript independent of a browser in the stand-alone Node.js runtime.  In otherwords, it's _just_ JavaScript - there's no HTML or CSS, and there's no visual aspect to the program except output to the console, which pipes its output to the command-line. Congratulations! This means you're officially a geek. 
 
 ## Installation
 
 ### Fork on GitHub
 
-First things first, you MUST fork this repository to your personal GitHub account. You MUST also set up your fork to have the original Operation Spark scratch-pad as an upstream repository so you can pull changes in the feature - BUT, you will do the upstream-pairing step **AFTER** you have installed the project into a new Cloud9 workspace.
+In the top-right corner of this page click **Fork**.
 
-1. https://help.github.com/articles/fork-a-repo/
-2. https://help.github.com/articles/fork-a-repo/#keep-your-fork-synced (see steps 5 - 7)
+<img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" width="400">
 
-This all sounds more confusing than it is, but ask for help if your lost.
 
 ### Setup your Cloud9 Workspace
 
-On the **Create New Workspace** page of Cloud9, SSH clone this repository into a new Cloud9 workspace by pasting the SSH git clone URL into the **Clone from Git or Mercurial URL** form field, then click the green **Create workspace** button.  The SSH git clone URL is:
-
-    git@github.com:OperationSpark/scratch-pad.git
+On the **Create New Workspace** page of Cloud9, clone **your** forked repository into a new workspace by copying your repository URL into the **Clone from Git or Mercurial URL** form field, then click the green **Create workspace** button.  
 
 You do not need select any Cloud9 workspace template, ie, HTML5, Node.js - the workspace will be automatically setup for you.
 
-Once you are setup in your workspace, go to the command-line and run the following command:
+<img src="img/new-workspace.gif" width="750">
+
+
+Once you are setup in your workspace, go to the command-line and paste the following command:
 
     git remote add upstream https://github.com/OperationSpark/scratch-pad.git
 
@@ -32,20 +31,21 @@ Finally, from the command-line, run the following command (NOTE: you will be ask
 
     ./.config/install.js && npm install
 
-### Share your Workspace with your Instructors
+<img src="img/add-upstream.gif" width="750">
 
-Once you've cloned and created your Cloud9 workspace for the scratch-pad, it's time to share your workspace with your instructors so they can evaluate and pair program with you.
+### Sharing is Caring
 
-In the TOP-RIGHT corner of Cloud9, find the **Share** button, and click on it to open the Share workspace dialogue box. On the dialogue box, find the form field titled, **Invite People** and enter the Cloud9 usernames of your teacher and your TA.In
+In the top-right corner of Cloud9, find the **Share** button, and click on it to open the Share workspace dialogue box. On the dialogue box, find the form field titled, **Invite People** and enter the Cloud9 usernames of your teacher and your TA.In
 
 **Make certain you give them read and write access** by ensuring the **RW** button is enabled - it will be blue when **RW** is enabled.
 
-If you don't know them, ask your teacher and TA to post their Cloud9 usernames into our Slack channel for the Classroom.
+If you don't know them, ask your teacher and TA to post their Cloud9 usernames into our Slack channel for the classroom.
 
-Steve's Cloud9 username is: themooserooster
-Max's Cloud9 username is: maxgaudin
-John's Cloud9 username is: jfraboni
+* Steve's username: themooserooster
+* Max's username: maxgaudin
+* John's username: jfraboni
 
+<img src="img/share-workspace.gif" width="750">
 
 ## app.js
 
@@ -70,7 +70,7 @@ Beyond cloud storage, and ease of sharing, one of the main reasons we start stud
 
 It is extremely important for you to begin debugging as you work. It's important to make use of `console.log(someValue);` to print expected values to the console and inspect your work. It is also highly valuable to get use to using breakpoints and the debugging tools of Cloud9 (and any other IDE you choose to use in the future)
 
-<a href="https://docs.c9.io/docs/debugging-your-code" target="_blank">Watch this video on getting started with Node.js debugging in Cloud9.</a>. This is how you should inspect your work in scratch-pad as you complete your homework assignments.
+<a href="https://docs.c9.io/docs/debugging-your-code" target="_blank">Watch this video on getting started with Node.js debugging in Cloud9</a>. This is how you should inspect your work in scratch-pad as you complete your homework assignments.
 
 
 ## Homework
