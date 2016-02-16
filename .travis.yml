@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "4.0"
+  
+notifications:
+  email:
+    - john@operationspark.org
+    - max@operationspark.org
+  slack: operationspark:ixq1B2YGNVjAZoh3PVEOoHic
+
+notifications:
+  slack: operationspark:IVZ9qgp3Ge6RTeSl7nftvktM
+  
