@@ -18,12 +18,14 @@
  *  c. how do you access individual characters of a String?
  *  d. how do you concatenate Strings? What operator do we use?
  */
-// YOUR CODE GOES BELOW HERE //
-
-
-
-
-// YOUR CODE GOES ABOVE HERE //
+function reverseString(input) {
+    // YOUR CODE GOES BELOW HERE //
+    
+    
+    
+    
+    // YOUR CODE GOES ABOVE HERE //
+}
 
 
 

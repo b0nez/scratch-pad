@@ -3,7 +3,7 @@
 'use strict';
 
 /**
- * 1: Contacts
+ * 1: Contact List
  * 
  *  a. Create a factory Function called makeContact(id, nameFirst, nameLast) 
  *     that returns a contact object.
@@ -35,6 +35,14 @@
  *          new-line character added after it!
  */
 // YOUR CODE GOES BELOW HERE //
+function makeContact(id, nameFirst, nameLast) {
+    
+} 
+
+
+function makeContactList() {
+    
+}
 
 
 

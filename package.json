@@ -31,5 +31,8 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "sinon": "^1.17.2"
+  },
+  "dependencies": {
+    "lodash": "^4.4.0"
   }
 }
