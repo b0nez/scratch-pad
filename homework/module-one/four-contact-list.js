@@ -3,7 +3,7 @@
 'use strict';
 
 /**
- * 1: Contact List
+ * 4: Contact List
  * 
  *  a. Create a factory Function called makeContact(id, nameFirst, nameLast) 
  *     that returns a contact object.

@@ -3,9 +3,43 @@ var
     sinon = require('sinon');
 
 
-describe('module one homework', function () {
-    describe("one : contacts", function () {
-        var homework = require('../homework/module-one/one-contact-list');
+describe('module-one-homework', function () {
+    describe("reverseString", function () {
+        var homework = require('../homework/module-one/one-reverse-string');
+        it('should return the input String, reversed', function () {
+            expect(homework.reverseString('hello')).to.equal('olleh');
+        });
+    });
+    
+    describe("fizzBuzz", function () {
+        beforeEach(function () {
+            sinon.spy(console, 'log');
+        });
+
+        afterEach(function () {
+            console.log.restore();
+        });
+        var homework = require('../homework/module-one/two-fizz-buzz');
+        it('should print to stdin the correct results of the fizz buzz exercise', function () {
+            homework.fizzBuzz();
+            fizzBuzzConsoleCalls.forEach(function (value) {
+                expect(console.log.calledWith(value)).to.be.true;
+            });
+        });
+    });
+    
+    describe("range", function () {
+        var homework = require('../homework/module-one/three-range');
+        it('should return a range between the two input integers', function () {
+            expect(homework.range(1, 5)).to.eql([1, 2, 3, 4, 5]);
+        });
+        it('should return a reversed range between the two input integers, if the start input is greater than the end input', function () {
+            expect(homework.range(5, 1)).to.eql([5, 4, 3, 2, 1]);
+        });
+    });
+    
+    describe("contact-list", function () {
+        var homework = require('../homework/module-one/four-contact-list');
         it('should expose a Function called makeContact that returns an Object with structure: {id: \'1\', nameFirst: \'Max\', nameLast: \'Gaudin\'}', function () {
             expect(homework.makeContact('1', 'Max', 'Gaudin')).to.eql({
                 id: '1',
@@ -46,41 +80,6 @@ describe('module one homework', function () {
             expect(contacts.all()).to.equal('Max Gaudin\nJohn Fraboni');
         });
     });
-
-    describe("two : fizzBuzz", function () {
-        beforeEach(function () {
-            sinon.spy(console, 'log');
-        });
-
-        afterEach(function () {
-            console.log.restore();
-        });
-        var homework = require('../homework/module-one/two-fizz-buzz');
-        it('should print to stdin the correct results of the fizz buzz exercise', function () {
-            homework.fizzBuzz();
-            fizzBuzzConsoleCalls.forEach(function (value) {
-                expect(console.log.calledWith(value)).to.be.true;
-            });
-        });
-    });
-
-    describe("three : range", function () {
-        var homework = require('../homework/module-one/three-range');
-        it('should return a range between the two input integers', function () {
-            expect(homework.range(1, 5)).to.eql([1, 2, 3, 4, 5]);
-        });
-        it('should return a reversed range between the two input integers, if the start input is greater than the end input', function () {
-            expect(homework.range(5, 1)).to.eql([5, 4, 3, 2, 1]);
-        });
-    });
-
-    describe("four : reverseString", function () {
-        var homework = require('../homework/module-one/four-reverse-string');
-        it('should return the input String, reversed', function () {
-            expect(homework.reverseString('hello')).to.equal('olleh');
-        });
-    });
-
 });
 
 var fizzBuzzConsoleCalls = [

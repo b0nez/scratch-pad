@@ -33,6 +33,10 @@ Finally, from the command-line, run the following command (NOTE: you will be ask
 
 <img src="img/add-upstream.gif" width="750">
 
+### Warning
+
+Whatever you do, please DO NOT move or delete files in this workspace. Files are required to reside in the current directory structure. Bad things will happen if you delete or move files around!
+
 ### Sharing is Caring
 
 In the top-right corner of Cloud9, find the **Share** button, and click on it to open the Share workspace dialogue box. On the dialogue box, find the form field titled, **Invite People** and enter the Cloud9 usernames of your teacher and your TA.In
