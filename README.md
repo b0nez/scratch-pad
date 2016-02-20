@@ -83,18 +83,25 @@ Your homework assignments are located in JavaScript (.js) files in the directory
 
 The assignments are ordered, so on day one of the module, start with the JavaScript file that begins with one, ie, `one-contact-list.js`. On day two, you will complete the assignment in the file, `two-x.js`, where `x` is the name of the assignment.
 
+### Running your Code
+
 As you code your solutions and save your work, you have three options for running your code:
 
-1. The coolest way is to run your work against the unit-tests. Go to the bash terminal and run the following command:
+1. The coolest way is to run your work against the unit-tests. Go to the bash terminal and run the following command, **replacing <my-assignment> with the name of the assignment on which you're working:**
     
-        npm test
+        mocha -R spec --grep <my-assignment>
     
-    This will run all the unit tests for the homework.
+    This will run all the unit tests _only_ for that homework.
     
     You can use `console.log()` to inspect and debug your work as you go. You will not be able to use the debugger with this option, so that is why `console.log()` is your way to see inspect your work.
 
-2. To use the debugger and breakpoints and _step thru_ your code, you can run your code by **having the file selected in the text-editor** and clicking the green **Run** button. This will open up a new process in the console view that will output your log statements. Breakpoints will be caught by the debugger and you can step through and insptect your code at runtime.
-3. You can also run the file straight from the command-line, for example, by running:
+2. You can run the entire test suite by running the command:
+    
+        npm test
+
+3. To use the debugger and breakpoints and _step thru_ your code, you can run your code by **having the file selected in the text-editor** and clicking the green **Run** button. This will open up a new process in the console view that will output your log statements. Breakpoints will be caught by the debugger and you can step through and insptect your code at runtime.
+
+4. You can also run the file straight from the command-line, for example, by running:
     
         ./homework/module-one/one-contact-list.js
     
