@@ -34,6 +34,9 @@
  *          WARNING: To pass the bonus test, the LAST full name should have NO
  *          new-line character added after it!
  */
+ 
+var contacts = require('./data/contact.json');
+
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
     
