@@ -29,7 +29,7 @@ Once you are setup in your workspace, go to the command-line and paste the follo
 
 Finally, from the command-line, run the following command (NOTE: you will be asked to provide your GitHub username and password in this step):
 
-    ./.config/install.js && npm install
+    npm install
 
 <img src="img/add-upstream.gif" width="750">
 

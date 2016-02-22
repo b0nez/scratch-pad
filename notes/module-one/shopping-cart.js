@@ -5,10 +5,11 @@
 var products = require('./data/product.json');
 
 
-/*
+/**
  * OBJECTIVES: MODEL a product and a shopping cart
  * 
  * Consider:
+ *
  *    For a product:
  *      a. What basic properties make up a typical product?
  *      b. If we add an setDiscout, getDiscount, how should this value effect the price? 
@@ -20,10 +21,12 @@ var products = require('./data/product.json');
 /** 
  * Factory for products
  * 
- * Why are factories cool? Imagine your products were populated by data-entry - you might use a factory 
- * to create products based on user input. Also, they support private members through closure. Finally, 
- * if you wanted to add properties for a newer version of your application, you'd only need to do so in 
- * one place.
+ * Why are factories cool? 
+ * 
+ * Imagine your products were populated by data-entry - you might use a factory 
+ * to create products based on user input. Also, factories support private 
+ * members through closure. Finally, if you wanted to add properties for a newer 
+ * version of your application, you'd only need to do so in one place.
  */
 function makeProduct(id, name, desc, cost) {
   var discount = 0;
@@ -46,7 +49,11 @@ function makeProduct(id, name, desc, cost) {
 }
 
 /**
- * In makeCart, we're making use of closure to create a private variable, products. 
+ * Factory for shopping carts
+ * 
+ * In makeCart, we're making use of closure to create a private variable, 
+ * the products Array.
+ * 
  * The products Array is not publically available - no one can direclty alter or 
  * delete it! The products Array is protected behind the API of the shopping cart.
  */
@@ -75,6 +82,11 @@ function makeCart() {
   };
 }
 
+////////////////////////////////////////////////////////////////////////////////
+
+/*
+ * CLIENT CODE : The code below here is only to test our shopping-cart.
+ */
 // USAGE //
 var earBuds = makeProduct('abc', 
                           'Ear Buds',

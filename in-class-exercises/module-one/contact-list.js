@@ -22,17 +22,23 @@
  *         returns the contact object if found in the contacts-list, or, 
  *         undefined if the fullName does not match any contacts in the list.
  * 
- *  BONUS : add a all() Function to your makeContactList() factory, so that the 
- *          contact-list returned has an all() API. The all() Function should 
- *          return a String formated with all the full-names of the separated 
- *          with a line-break, like so:
+ * BONUS : add a all() Function to your makeContactList() factory, so that the 
+ *         contact-list returned has an all() API. The all() Function should 
+ *         return a String formated with all the full-names of the separated 
+ *         with a line-break, like so:
  *          
- *          myContacts.add(); // => Max Gaudin
- *                                  John Fraboni
- *                                  Your Mom
+ *         myContacts.add(); // => Max Gaudin
+ *                                 John Fraboni
+ *                                 Your Mom
  *          
  *          WARNING: To pass the bonus test, the LAST full name should have NO
  *          new-line character added after it!
+ * 
+ * RUNNING YOUR CODE:
+ * 
+ * You can run the individual test by entering the following command:
+ * 
+ *   mocha -R spec --grep contact-list
  */
  
 var contacts = require('./data/contact.json');

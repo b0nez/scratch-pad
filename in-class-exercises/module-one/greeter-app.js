@@ -34,9 +34,6 @@
  * 
  *   mocha -R spec --grep greeter-app
  * 
- * Otherwise you can run the all tests by running:
- * 
- *   npm test
  */
 
 function greeter(hour) {
