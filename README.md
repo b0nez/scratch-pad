@@ -81,7 +81,7 @@ It is extremely important for you to begin debugging as you work. It's important
 
 Your homework assignments are located in JavaScript (.js) files in the directory `homework/module-x`, where `x` is whatever module you are currently undertaking.
 
-The assignments are ordered, so on day one of the module, start with the JavaScript file that begins with one, ie, `one-contact-list.js`. On day two, you will complete the assignment in the file, `two-x.js`, where `x` is the name of the assignment.
+The assignments are ordered, so on day one of the module, start with the JavaScript file that begins with `one`, ie, `one-reverse-string.js`. On day two, you will complete the assignment in the file, `two-x.js`, where `x` is the name of the assignment.
 
 ### Running your Code
 
@@ -103,7 +103,7 @@ As you code your solutions and save your work, you have three options for runnin
 
 4. You can also run the file straight from the command-line, for example, by running:
     
-        ./homework/module-one/one-contact-list.js
+        ./homework/module-one/one-reverse-string.js
     
 
 You MUST submit your homework by 5:30pm the day it is due by doing a pull request.  See detailed instructions in our Bootcamp on how to submit your homework by doing a pull request, or, ask for help.
