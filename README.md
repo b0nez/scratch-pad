@@ -77,7 +77,7 @@ It is extremely important for you to begin debugging as you work. It's important
 <a href="https://docs.c9.io/docs/debugging-your-code" target="_blank">Watch this video on getting started with Node.js debugging in Cloud9</a>. This is how you should inspect your work in scratch-pad as you complete your homework assignments.
 
 
-## Homework
+## Homework & Exercises
 
 Your homework assignments are located in JavaScript (.js) files in the directory `homework/module-x`, where `x` is whatever module you are currently undertaking.
 
@@ -105,5 +105,7 @@ As you code your solutions and save your work, you have three options for runnin
     
         ./homework/module-one/one-reverse-string.js
     
+
+### Submitting Your Homework, Exercises and Quizzes
 
 You MUST submit your homework by 5:30pm the day it is due by doing a pull request.  See detailed instructions in our Bootcamp on how to submit your homework by doing a pull request, or, ask for help.
