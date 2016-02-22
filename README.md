@@ -16,22 +16,22 @@ In the top-right corner of this page click **Fork**.
 
 ### Setup your Cloud9 Workspace
 
-On the **Create New Workspace** page of Cloud9, clone **your** forked repository into a new workspace by copying your repository URL into the **Clone from Git or Mercurial URL** form field, then click the green **Create workspace** button.  
+1. On the **Create New Workspace** page of Cloud9, clone **your** forked repository into a new workspace by copying your repository URL into the **Clone from Git or Mercurial URL** form field, then click the green **Create workspace** button.  
 
-You do not need select any Cloud9 workspace template, ie, HTML5, Node.js - the workspace will be automatically setup for you.
+    You do not need select any Cloud9 workspace template, ie, HTML5, Node.js - the workspace will be automatically setup for you.
 
-<img src="img/new-workspace.gif" width="750">
+    <img src="img/new-workspace.gif" width="750">
 
 
-Once you are setup in your workspace, go to the command-line and paste the following command:
-
-    git remote add upstream https://github.com/OperationSpark/scratch-pad.git
-
-Finally, from the command-line, run the following command (NOTE: you will be asked to provide your GitHub username and password in this step):
-
-    npm install
-
-<img src="img/add-upstream.gif" width="750">
+2. Once you are setup in your workspace, go to the command-line and paste the following command:
+    
+        git remote add upstream https://github.com/OperationSpark/scratch-pad.git
+    
+3. Finally, from the command-line, run the following command (NOTE: you will be asked to provide your GitHub username and password in this step):
+    
+        npm install
+    
+    <img src="img/add-upstream.gif" width="750">
 
 ### Warning
 
