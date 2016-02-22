@@ -27,7 +27,7 @@ In the top-right corner of this page click **Fork**.
     
         git remote add upstream https://github.com/OperationSpark/scratch-pad.git
     
-3. Finally, from the command-line, run the following command (NOTE: you will be asked to provide your GitHub username and password in this step):
+3. Finally, from the command-line, run the following command:
     
         npm install
     
