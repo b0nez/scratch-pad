@@ -109,3 +109,19 @@ As you code your solutions and save your work, you have three options for runnin
 ### Submitting Your Homework, Exercises and Quizzes
 
 You MUST submit your homework by 5:30pm the day it is due by doing a pull request.  See detailed instructions in our Bootcamp on how to submit your homework by doing a pull request, or, ask for help.
+
+To submit your homework
+
+1. First, implement and save your code! Make sure it first passes all the unit tests for the assignment by running the invidual test for the particular assignment in question:
+    
+        mocha -R spec --grep <my-assignment>
+
+2. Next, you've got to add, commit and push all of your work to your forked repository. This is easy, you run the commands in this sequence:
+    
+        git add -A
+        git commit -m"* submitting homework for reverseString"
+        git push
+
+3. Finally, go to YOUR FORKED GitHub repository on GitHub, and make a _pull request_.  When making the pull request, in the first two dropdown boxes, the first box should be set to Operation Spark, and the second box MUST be YOUR branch, so select your GitHub username from the second dropdownbox.  The third and forth box should be your GitHub username and master.  Check it out:
+
+<img src="img/pull-request-submitting-assignments.png" width="750">
