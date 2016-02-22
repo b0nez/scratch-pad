@@ -10,10 +10,7 @@
  * You can run the individual test by entering the following command:
  * 
  *   mocha -R spec --grep type
- * 
- * Otherwise you can run the all tests by running:
- * 
- *   npm test
+ *
  */
 
 /** 

@@ -20,6 +20,12 @@
  *  a. create something to collect the output you'll return.
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
+ * 
+ * RUNNING YOUR CODE:
+ * 
+ * You can run the individual test by entering the following command:
+ * 
+ *   mocha -R spec --grep range
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //

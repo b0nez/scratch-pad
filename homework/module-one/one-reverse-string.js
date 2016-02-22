@@ -24,9 +24,6 @@
  * 
  *   mocha -R spec --grep reverseString
  * 
- * Otherwise you can run the all tests by running:
- * 
- *   npm test
  */
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //

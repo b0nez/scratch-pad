@@ -11,9 +11,6 @@
  * 
  *   mocha -R spec --grep first-class-functions
  * 
- * Otherwise you can run the all tests by running:
- * 
- *   npm test
  */
 
 /** 
