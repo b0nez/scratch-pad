@@ -10,4 +10,4 @@ notifications:
 
 notifications:
   slack: operationspark:IVZ9qgp3Ge6RTeSl7nftvktM
-  webhooks: https://opspark-bootcamp.firebaseIO.com/notifications
+  webhooks: https://opspark-bootcamp.firebaseIO.com/payload.json
