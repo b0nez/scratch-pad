@@ -7,4 +7,4 @@ notifications:
     - john@operationspark.org
     - max@operationspark.org
   slack: operationspark:IVZ9qgp3Ge6RTeSl7nftvktM
-  webhooks: https://opspark-bootcamp.firebaseIO.com
+  webhooks: https://opspark-bootcamp.firebaseIO.com/C7389xi6HLCQW0o5oHdfkRXGXGIXm8KpLwmUweDY
