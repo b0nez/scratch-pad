@@ -17,6 +17,7 @@
  * 
  *   mocha -R spec --grep my-first-pull-request
  * 
+ * I did it!
  */
 
 /** 
