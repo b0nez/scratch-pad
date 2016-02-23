@@ -17,6 +17,7 @@
  * 
  *   mocha -R spec --grep my-first-pull-request
  * 
+ * Anything
  */
 
 /** 
@@ -24,7 +25,7 @@
  */
 function print(value) {
   // YOUR CODE BELOW HERE //
-  console.log(value);
+ console.log(value); 
   
   
   
