@@ -16,6 +16,7 @@
  * You can run the individual test by entering the following command:
  * 
  *   mocha -R spec --grep my-first-pull-request
+ * i did it!
  * 
  */
 
