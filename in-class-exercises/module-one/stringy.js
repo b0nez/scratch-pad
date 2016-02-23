@@ -143,10 +143,10 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them 
  *      in an Array called args.
  */ 
-function join(stringOne, stringTwo) {
+function join() {
     // YOUR CODE BELOW HERE //
-    var args = [];
-    
+    var args = Array.prototype.slice.call(arguments);
+    return args.join("");
     
     // YOUR CODE ABOVE HERE //
 }
@@ -177,7 +177,13 @@ function longest(stringOne, stringTwo) {
  */ 
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    
+    if(stringOne < stringTwo) {
+        return 1;
+    } else if (stringOne > stringTwo) {
+        return -1;
+    } else {
+        return 0;
+    }
     
     
     // YOUR CODE ABOVE HERE //
@@ -193,7 +199,13 @@ function sortAscending(stringOne, stringTwo) {
  */ 
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    
+    if(stringOne < stringTwo) {
+        return -1;
+    } else if(stringOne > stringTwo) {
+        return 1;
+    } else {
+        return 0;
+    }
     
     
     
