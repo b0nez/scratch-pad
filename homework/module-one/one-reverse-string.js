@@ -28,8 +28,12 @@
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
     
-    
-    
+    var revString = "";
+    for (var i=input.length-1; i > -1; i--){
+        revString = (revString + input[i]);
+      
+    }
+    return revString;
     
     // YOUR CODE GOES ABOVE HERE //
 }
