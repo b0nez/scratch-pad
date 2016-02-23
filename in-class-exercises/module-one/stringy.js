@@ -131,7 +131,8 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them 
  *      in an Array called args.
  */ 
-function join(stringOne, stringTwo) {
+function join() {
+    var args = Array.prototype.slice.call(arguments);
     // YOUR CODE BELOW HERE //
     
     
