@@ -16,16 +16,15 @@
  * You can run the individual test by entering the following command:
  * 
  *   mocha -R spec --grep my-first-pull-request
- * 
+ * I did it!
  */
-
+ 
 /** 
  * Given an input value, print the value to the screen using console.log().
  */
 function print(value) {
   // YOUR CODE BELOW HERE //
   console.log(value);
-  
   
   
   // YOUR CODE ABOVE HERE //
