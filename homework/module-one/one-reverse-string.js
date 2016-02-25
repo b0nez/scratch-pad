@@ -27,9 +27,11 @@
  */
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
+    var reversal = "";
+    for(var i = input.length - 1; i > -1; i--) {
+        reversal = (reversal + input[i]);
+    }
+    return reversal;
     
     // YOUR CODE GOES ABOVE HERE //
 }
