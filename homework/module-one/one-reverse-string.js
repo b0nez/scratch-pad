@@ -27,11 +27,14 @@
  */
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
+    var revString = "";
+    for (i = revString.length - 1; i >= 0; i--) 
+           revString += input[i];
+     return revString;
     
     
     
-    
-    // YOUR CODE GOES ABOVE HERE //
+    // YOUR CODE GOES OVE HERE //
 }
 
 
