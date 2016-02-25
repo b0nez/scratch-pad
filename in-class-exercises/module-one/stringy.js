@@ -33,7 +33,7 @@ function length(string) {
  */ 
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-    
+    return string.toLowerCase();
     
     
     // YOUR CODE ABOVE HERE //
@@ -44,7 +44,7 @@ function toLowerCase(string) {
  */ 
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-    
+    return string.toUpperCase();
     
     
     // YOUR CODE ABOVE HERE //
@@ -65,8 +65,7 @@ function toUpperCase(string) {
  */ 
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-    
-    
+    return string.split(" ").join("-").toLowerCase();
     
     // YOUR CODE ABOVE HERE //
 }
@@ -85,7 +84,7 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-    
+    if  (string)
     
     
     // YOUR CODE ABOVE HERE //
@@ -133,7 +132,7 @@ function concat(stringOne, stringTwo) {
  */ 
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    
+    return join();
     
     
     // YOUR CODE ABOVE HERE //
