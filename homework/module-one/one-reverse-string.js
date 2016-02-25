@@ -27,7 +27,7 @@
  */
 function reverseString(input) {
 // YOUR CODE GOES BELOW HERE //
-    console.log(input);
+    console.log(input)
     return input.split('').reverse().join('');
 // YOUR CODE GOES ABOVE HERE //
 }

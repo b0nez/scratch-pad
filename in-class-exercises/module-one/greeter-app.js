@@ -35,15 +35,29 @@
  *   mocha -R spec --grep greeter-app
  * 
  */
-
-function greeter(hour) {
+ 
+ function greeter(hour) {
     // YOUR CODE BELOW HERE //
     
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    if (hour < 12) {
+        console.log ('Good Morning!');
+        //hour is less than 12 it shows good morning
+        
+    } else if ( hour < 17) {
+        console.log ('Good Afternoon!');
+        // hour is greater than 12 and less than 17 is shows good afternoon
+        
+    } else if ( hour < 22 ) {
+        console.log ('Good Evening!');
+        // hour is greater than 17 and less than 22 is shows good afternoon
+        
+    } else {
+        console.log ('Good Night!');
+        // hour is greater than 22 and less than 24 is shows good afternoon
+    }
+   // YOUR CODE ABOVE HERE //
 }
+
 
 /*
  * To test our greeter when developing, we need to fake some input data, ie, 
@@ -51,12 +65,12 @@ function greeter(hour) {
  * 
  * In a more realistic setting, you might do something like this to get the 
  * actual system hour:
- *
- * var today = new Date();
- * var hour = today.getHours();
  */
+  var today = new Date();
+  var hour = today.getHours();
+ 
 
-greeter(11);
+greeter(hour);
 
 
 
