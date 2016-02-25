@@ -34,7 +34,7 @@ function reverseString(input) {
       
     }
     return revString;
-    
+    // OR  return input.split("").reverse().join("");
     // YOUR CODE GOES ABOVE HERE //
 }
 
