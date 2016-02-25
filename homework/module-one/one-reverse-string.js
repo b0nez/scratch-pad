@@ -26,15 +26,14 @@
  * 
  */
 function reverseString(input) {
-    // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE GOES ABOVE HERE //
+// YOUR CODE GOES BELOW HERE //
+    console.log(input);
+    return input.split('').reverse().join('');
+// YOUR CODE GOES ABOVE HERE //
 }
 
-
+/* where is the line of code that defines the var input= olleh ?
+ Is it in a stack that I'm just not seeing?*/
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////

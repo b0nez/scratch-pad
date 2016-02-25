@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+var#!/usr/bin/env node
 
 'use strict';
 
