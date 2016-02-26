@@ -133,7 +133,7 @@ describe('in-class-exercises', function () {
                 expect(assignment.isArray({})).to.be.false;
                 expect(assignment.isArray(new Date())).to.be.false;
                 expect(assignment.isArray(1)).to.be.false;
-                expect(assignment.isCollection(null)).to.be.false;
+                expect(assignment.isArray(null)).to.be.false;
                 expect(assignment.isArray('a')).to.be.false;
                 expect(assignment.isArray(true)).to.be.false;
             });
