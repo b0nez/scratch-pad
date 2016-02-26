@@ -29,8 +29,19 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
+    var allIntegers = [];
+    if (start <= end){
+        for (var i = start; i<= end; i++){
+            allIntegers.push(i);
+         
+        }
+    } else {
+        for (var i = start; i >= end; i--){
+            allIntegers.push(i);
+           
+        }
+    }
+    return allIntegers;
     
     
     // YOUR CODE GOES ABOVE HERE //
