@@ -1,4 +1,5 @@
 var
+    _ = require('lodash'),
     expect = require('chai').expect,
     sinon = require('sinon');
 
@@ -22,9 +23,7 @@ describe('module-one-homework', function () {
         var homework = require('../homework/module-one/two-fizz-buzz');
         it('should print to stdin the correct results of the fizz buzz exercise', function () {
             homework.fizzBuzz();
-            fizzBuzzConsoleCalls.forEach(function (value) {
-                expect(console.log.calledWith(value)).to.be.true;
-            });
+            expect(_.flatten(console.log.args)).to.eql(fizzBuzzConsoleCalls);
         });
     });
     
