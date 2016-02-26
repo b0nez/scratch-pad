@@ -21,7 +21,6 @@
  */
 function length(string) {
     // YOUR CODE BELOW HERE //
-    return string.length;
     
     
     

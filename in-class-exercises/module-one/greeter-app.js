@@ -9,16 +9,16 @@
  * write a greeting program that prints a greeting to the screen like so: 
  *
  * // hour is 0-12
- * Good morning!
+ * Good Morning!
  *
  * // hour is 12-17
- * Good afternoon! 
+ * Good Afternoon! 
  *
  * // hour is 17-22
- * Good evening!
+ * Good Evening!
  *
  * // hour is 22-24 
- * Good night! 
+ * Good Night!
  *
  * TIPS: 
  * 
