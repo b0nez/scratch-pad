@@ -21,6 +21,7 @@
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
+    return Array.isArray(value);
     
     
     
@@ -38,6 +39,7 @@ function isArray(value) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
+    return typeOf(value);
     
     
     

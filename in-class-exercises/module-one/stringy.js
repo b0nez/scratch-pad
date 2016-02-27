@@ -100,6 +100,7 @@ function beginsWith(string, char) {
   } else {
       return false;
   }
+  //  OR return string[0].lowercase()===char.toLowerCase();
   //console.log(myString === mychar);
   //  var result= string.search(new RegExp(searchstring, "i"));
   //  return (myString) === (mychar);
@@ -165,6 +166,7 @@ function join() {
     //}
     //return args.join(", ");
     var args =  Array.from(arguments);
+    // or var args = Array.prototype.slice.call(arguments);
     return args.join("");
     /* var joinedArray = "";
     //return joinedArray.join(" ");
