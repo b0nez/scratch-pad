@@ -20,10 +20,13 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
+    return function(strOrNum){
+        return strOrNum > base;
+    };
     
-    
-    
-    
+//     return function(string) {
+//       return string[0] === startsWith; 
+//   };
     // YOUR CODE ABOVE HERE //
 }
 
@@ -34,7 +37,9 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    return function (strOrNum){
+        return strOrNum < base;
+    };
     
     
     
@@ -48,7 +53,9 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
+    return function (string){
+        return string[0] === startsWith;
+    };
     
     
     
@@ -62,7 +69,9 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
+    return function (string){
+        return string[string.length-1] === endsWith;
+    };
     
     
     
@@ -78,7 +87,11 @@ function createEndsWithFilter(endsWith) {
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
+    var modifiedStrings = [];
+    for (var i = 0; i < strings.length; i++){
+        modifiedStrings.push(modify(strings[i]));
+    }
+    return modifiedStrings;
     
     
     
@@ -96,7 +109,41 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
+    var passedTest; 
+    for (var i = 0; i < strings.length; i++){
+        if (test(strings[i]) === true){
+            passedTest = true;
+        } else {
+            i = strings.length;
+            passedTest =false;
+        }
+    }
+    return passedTest;
     
+    // var testedStrings = [];
+    // for (var i = 0; i < strings.length; i++){
+    //     testedStrings.push(test(strings[i]));
+    //     if (test(strings[i]) === false){
+    //         i = strings.length;
+    //         return false;
+    //     } else {
+    //     return true;
+    //     }
+    // }
+    
+    // for (var j = 0; j < testedStrings.length; j++){
+    //     if (testedStrings[j] === true){
+    //         return true;
+    //     } else {
+    //         j = testedStrings.length;
+    //         return false;
+    //     }
+    // }
+    // var j = -1;
+    // while(testedStrings[j] === true) {
+    //     console.log(count);
+    //     count++;
+    // }
     
     
     
