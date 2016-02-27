@@ -22,6 +22,7 @@
 function isArray(value) {
     // YOUR CODE BELOW HERE //
     
+    return Array.isArray(value);
     
     
     
