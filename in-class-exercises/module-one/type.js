@@ -22,11 +22,12 @@
 function isArray(value) {
     // YOUR CODE BELOW HERE //
     
-    
-    
-    
+    return Array.isArray(value);
+    console.log (isArray([]));
     // YOUR CODE ABOVE HERE //
 }
+
+
 
 /** 
  * Given an input value, return true if the value is an Object intended as a 
@@ -39,7 +40,7 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
-    
+    return Object.isObject(value);
     
     
     // YOUR CODE ABOVE HERE //
@@ -53,8 +54,7 @@ function isObject(value) {
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+   return Array.isArray(isCollection);
     
     
     // YOUR CODE ABOVE HERE //
@@ -81,7 +81,7 @@ function isCollection(value) {
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
     
-    
+    return typeOf(value);
     
     
     // YOUR CODE ABOVE HERE //
