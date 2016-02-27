@@ -16,14 +16,29 @@
  * 
  *   mocha -R spec --grep fizzBuzz
 */
-function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
+function fizzBuzz() {    
+    for(var index = 0; index < 101; index++) {
+        if (index % 15 === 0){
+        console.log("FizzBuzz");
+        }
+        else if (index % 3 === 0) {
+            console.log("Fizz");
+        } 
+        else if(index % 5 === 0){
+        console.log("Buzz");
+        } 
+        else{
+            console.log(index);
+        }
+    }
+}
+
 
 
 
 
     // YOUR CODE GOES ABOVE HERE //
-}
 
 
 

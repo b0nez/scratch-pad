@@ -22,17 +22,21 @@
  * 
  * You can run the individual test by entering the following command:
  * 
+}
  *   mocha -R spec --grep reverseString
  * 
  */
-function reverseString(input) {
+function reverseString(string) {
     // YOUR CODE GOES BELOW HERE //
-    
+      var reverseThis = "";
+  for (var i = string.length-1; i >= 0; i --)
+    reverseThis += string[i];
+  return reverseThis;
+}
     
     
     
     // YOUR CODE GOES ABOVE HERE //
-}
 
 
 

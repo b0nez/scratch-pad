@@ -36,15 +36,26 @@
  * 
  */
 
+
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    if (hour < 12){
+        console.log("Good Morning!");
+    }
+    else if (hour < 17){
+        console.log("Good Afternoon!");
+    }
+    else if (hour < 22){
+        console.log("Good Evening!");   
+    }
+    else {
+        console.log("Good Night!");
+    }
 }
+   
 
+
+ // YOUR CODE ABOVE HERE //
 /*
  * To test our greeter when developing, we need to fake some input data, ie, 
  * the hour, so just change the input value to check your work.
@@ -52,11 +63,13 @@ function greeter(hour) {
  * In a more realistic setting, you might do something like this to get the 
  * actual system hour:
  *
- * var today = new Date();
- * var hour = today.getHours();
  */
+var today = new Date();
+var hour = today.getHours();
+ 
 
-greeter(11);
+greeter(hour);
+
 
 
 

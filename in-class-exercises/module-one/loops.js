@@ -22,8 +22,9 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
-  
+  for(var i = 0; i < array.length; i++){
+    console.log(array[i]);
+  }
   
   
   // YOUR CODE ABOVE HERE //
@@ -35,9 +36,9 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
+  for(var i = array.length - 1; i > -1; i--){
+    console.log(array[i]);
+  }
   
   // YOUR CODE ABOVE HERE //
 }
@@ -48,8 +49,9 @@ function printArrayValuesInReverse(array) {
  */
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
-  
+    for (var key in object){
+    console.log(object[key])
+    }
   
   
   // YOUR CODE ABOVE HERE //
@@ -61,7 +63,9 @@ function printObjectValues(object) {
  */
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+    
+    // for(color){
+    //   console.log(object["blue"])
   
   
   
@@ -73,11 +77,11 @@ function printObjectKeys(object) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  var keys = Object.keys(object);
+    console.log(keys);
+    return keys;
+
+      // YOUR CODE ABOVE HERE //
 }
 
 /** 
@@ -85,11 +89,8 @@ function getObjectKeys(object) {
  */
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  Object.keys();
+    // YOUR CODE ABOVE HERE //
 }
 
 /** 
