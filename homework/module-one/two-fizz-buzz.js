@@ -18,12 +18,24 @@
 */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-
-
-
-
-    // YOUR CODE GOES ABOVE HERE //
+        for (var i = 0; i < 101; i++)
+    {
+      if (i % 5 === 0 && i % 3=== 0) {
+         console.log("FizzBuzz");// prints fizzbuzz for integers divisible by 5 and 3
+     }
+      else if (i % 3 === 0)
+      {
+         console.log("Fizz");// prints fizz for integers divisible by 3
+      }
+      else if (i % 5 === 0)
+      {
+         console.log("Buzz");// prints buzz for integers divisible by 5
+      }
+      else console.log(i );
+     }
 }
+      // YOUR CODE GOES ABOVE HERE //
+
 
 
 
