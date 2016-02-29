@@ -23,7 +23,7 @@ function createGreaterThanFilter(base) {
     
     return function(value) {
         return value > base;
-    }
+    };
     
     
     // YOUR CODE ABOVE HERE //
@@ -42,7 +42,7 @@ function createLessThanFilter(base) {
     
     return function(value) {
         return value < base;
-    }
+    };
     
     // YOUR CODE ABOVE HERE //
 }
@@ -57,7 +57,7 @@ function createStartsWithFilter(startsWith) {
     
     return function(string) {
         return string[0] === startsWith;
-    }
+    };
     
     
     // YOUR CODE ABOVE HERE //
@@ -74,7 +74,9 @@ console.log(startsWithJ('JSON'));
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    
+    return function(string) {
+        return string[string.length-1] === endsWith;
+    };
     
     
     // YOUR CODE ABOVE HERE //
@@ -116,7 +118,15 @@ console.log(modifyStrings(['a', 'b', 'c'], function (string) {
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
     
-    
+    var testTrue; 
+    for (var i = 0; i < strings.length; i++) {
+        if (test(strings[i]) === true) {
+            testTrue = true;
+        } else {
+            return false;
+        }
+    }
+    return testTrue;
     
     
     // YOUR CODE ABOVE HERE //
