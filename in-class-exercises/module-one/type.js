@@ -16,6 +16,7 @@
 /** 
  * Given an input value, return true if the value is an Array, false if otherwise.
  * 
+ *
  * TIP: In JavaScript, how can we decipher if a value is an Array? Can typeof
  * work?
  */
@@ -23,7 +24,7 @@ function isArray(value) {
     // YOUR CODE BELOW HERE //
     
     return Array.isArray(value);
-    console.log (isArray([]));
+    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -40,10 +41,15 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
-    return Object.isObject(value);
-    
-    
-    // YOUR CODE ABOVE HERE //
+    var isObject = true;
+        if (typeof value !== 'object') isObject = false;
+        if( value === null) isObject = false;
+        if( Array.isArray(value)=== true) isObject = false;
+        if(value instanceof Date=== true) isObject= false;
+        
+        return isObject;
+        
+        // YOUR CODE ABOVE HERE //
 }
 
 /** 
@@ -54,7 +60,15 @@ function isObject(value) {
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-   return Array.isArray(isCollection);
+  var isObject = true;
+        if (typeof value !== 'object') isObject = false;
+        if( value === null) isObject = false;
+        if( Array.isArray(value)=== true) isObject = true;
+        if(value instanceof Date=== true) isObject= false;
+        
+        return isObject;
+        
+        // YOUR CODE ABOVE HERE //
     
     
     // YOUR CODE ABOVE HERE //
@@ -81,7 +95,12 @@ function isCollection(value) {
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
     
-    return typeOf(value);
+    if(value === null) return 'null';
+    if (value instanceof Date) return 'date';
+    if (Array.isArray(value)) return  'array';
+    
+    
+    return typeof value;
     
     
     // YOUR CODE ABOVE HERE //

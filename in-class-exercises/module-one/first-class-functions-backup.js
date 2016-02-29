@@ -20,13 +20,14 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-     return function (value){
+    return function (value){
         return value > base;
     };
     // YOUR CODE ABOVE HERE //
 }
-var greaterThan2=createGreaterThanFilter(2);
-console.log(greaterThan2(3));
+//var greaterThan2=createGreaterThanFilter(2);
+//console.log(greaterThan2(3));
+
 /** 
  * Given an input base to test against, which could be a String or Number, 
  * return a Function that tests whether a given value is less than the 
@@ -34,11 +35,11 @@ console.log(greaterThan2(3));
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
+    
     return function (value){
-        return value > base;
-
-    };
-    // YOUR CODE ABOVE HERE //
+        return value < base;
+    
+     // YOUR CODE ABOVE HERE //
 }
 
 /** 
@@ -50,7 +51,7 @@ function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
     
     return function (string){
-      return string[0] === startsWith;
+        return string[0] === startsWith;
     
     
     // YOUR CODE ABOVE HERE //
@@ -64,9 +65,9 @@ function createStartsWithFilter(startsWith) {
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    return function (string){
-      return length.string-1 === endsWith;
-    };
+     return function (string){
+        return length.string-1 === endsWith;
+    
     
     // YOUR CODE ABOVE HERE //
 }
@@ -80,9 +81,9 @@ function createEndsWithFilter(endsWith) {
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    var output =[];
-    for(i= 0; i < strings.length; i++){
+   
+   var output =[];
+   for(i= 0; i < strings.length; i++){
         var string =Strings[i];
         output.push(modify(string));
     };
@@ -101,12 +102,15 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-  
-    
-    
-    
+   
+   var output =[];
+   for(i= 0; i < strings.length; i++){
+        var string =Strings[i];
+        output.push(test(string));
+    };
+    return output(test);
     // YOUR CODE ABOVE HERE //
-}
+};
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 module.exports.createGreaterThanFilter = createGreaterThanFilter;

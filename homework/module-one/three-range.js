@@ -29,7 +29,18 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
+    var arrary =[];
+    if (typeof start === 'number') {
+        if (start < end){
+            for (var i = start; i <= end; i ++){
+                array.push(i);
+            }
+            return array;
+        }
+        else {
+            //for var j= start; 
+        }
+    }
     
     
     
