@@ -45,11 +45,59 @@ var contacts = require('./data/contact.json');
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
+    return {
+        id: id,
+        nameFirst: nameFirst,
+        nameLast: nameLast,
+    };
     
 } 
 
 
 function makeContactList() {
+    var contactsList = [];
+    return {
+        addContact: function (contact) {
+            return contactsList.push(contact);
+        },
+        // removeContact: function (contact){
+        //     var pos = contactsList.indexOf(contact);
+            
+        //     return contactsList.splice(pos, 1);
+        // },
+        removeContact: function(contact){
+            var index = contactsList.indexOf(contact);  
+            if (index > -1){
+                return contactsList.splice(index, 1)[0];
+            }
+        },
+        length: function (){
+            return contactsList.length;
+        },
+        // find: function (fullname){
+        //     var foundName;
+        //     for (var j=0;j<contactsList.length;j++){
+        //         if (fullname === contactsList.nameFirst[j] + " " + contactsList.nameLast[j]){
+        //             foundName = contactsList[j];
+                
+        //         } else foundName = undefined;
+        //         return foundName;
+        //     }
+        //     // var foundContact = contactsList.indexOf(fullname);
+        //     // return contactsList[foundContact];
+        // },
+        all: function (){
+            var allContacts = '';
+            for (var i = 0; i < contactsList.length; i++){
+                allContacts = allContacts + contactsList.nameFirst[i] + ' ' + contactsList.nameLast[i];
+                if (i < contactsList.length-1){
+                    allContacts = allContacts + '\n';
+                } else return allContacts;
+                return allContacts;
+            }
+        }
+        
+    };
     
 }
 

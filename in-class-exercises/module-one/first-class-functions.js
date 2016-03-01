@@ -37,7 +37,7 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    return function (strOrNum){
+    return function(strOrNum){
         return strOrNum < base;
     };
     

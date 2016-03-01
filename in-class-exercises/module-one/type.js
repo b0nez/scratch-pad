@@ -39,7 +39,15 @@ function isArray(value) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    return typeOf(value);
+    var isAnObject = true;
+    
+    if (value === null) isAnObject = false;
+    if (Array.isArray(value) === true) isAnObject = false;   // dont really need the === true
+    
+    if (value instanceof Date === true) isAnObject = false;
+    if (typeof value !== 'object') isAnObject = false;
+    
+    return isAnObject;
     
     
     
@@ -55,6 +63,16 @@ function isObject(value) {
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
+    var isAnObject = true;
+    
+    if (value === null) isAnObject = false;
+    if (Array.isArray(value) === true) isAnObject = true;   // dont really need the === true
+    
+    if (value instanceof Date === true) isAnObject = false;
+    if (typeof value !== 'object') isAnObject = false;
+    
+    return isAnObject;
+    
     
     
     
@@ -82,6 +100,28 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
+    
+    if (Array.isArray(value)) return 'array';
+    if (value === null) return 'null';
+    if (value instanceof Date) return 'date';
+    return typeof value;
+    
+    
+
+    
+    
+    
+    
+    // var kindOf;
+    
+    // if (value === null) kindOf = 'null';
+    // if (Array.isArray(value) === true) kindOf = 'array';   // dont really need the === true
+    
+    // if (value instanceof Date === true) kindOf = 'Date';
+    // if (typeof value !== 'object') kindOf = ;
+    
+    // return kindOf;
+    
     
     
     
