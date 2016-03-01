@@ -36,14 +36,15 @@ function range(start, end) {
         for (var i = start; i <= end; i++) {
             numRange.push(i);
         }
-        return numRange;
+        //return numRange;
     } else {
         for (var j = start; j >= end; j--) {
             numRange.push(j);
         }
-        return numRange;
+        //return numRange;
     }
-
+    return numRange;
+    
     // YOUR CODE GOES ABOVE HERE //
 }
 

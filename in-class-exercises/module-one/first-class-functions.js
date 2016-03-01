@@ -21,11 +21,16 @@
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-    
+    return function(value) {
+        return value > base;
+    };
     
     
     // YOUR CODE ABOVE HERE //
 }
+
+var greaterThan2 = createGreaterThanFilter(2);
+console.log(greaterThan2(3));
 
 /** 
  * Given an input base to test against, which could be a String or Number, 
@@ -35,8 +40,9 @@ function createGreaterThanFilter(base) {
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-    
-    
+    return function(value) {
+        return value < base;
+    };
     
     // YOUR CODE ABOVE HERE //
 }
@@ -49,11 +55,16 @@ function createLessThanFilter(base) {
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
     
-    
+    return function(string) {
+        return string[0] === startsWith;
+    };
     
     
     // YOUR CODE ABOVE HERE //
 }
+
+var startsWithJ = createStartsWithFilter('J');
+console.log(startsWithJ('JSON'));
 
 /** 
  * Given a endsWith character, which will be a single character, return a 
@@ -63,7 +74,9 @@ function createStartsWithFilter(startsWith) {
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    
+    return function(string) {
+        return string[string.length-1] === endsWith;
+    };
     
     
     // YOUR CODE ABOVE HERE //
@@ -79,11 +92,19 @@ function createEndsWithFilter(endsWith) {
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
     
-    
-    
+    var output = [];
+    for(var i = 0; i < strings.length; i++) {
+        var string = strings[i];
+        output.push(modify(string));
+    }
+    return output;
     
     // YOUR CODE ABOVE HERE //
 }
+
+console.log(modifyStrings(['a', 'b', 'c'], function (string) {
+    return string.toUpperCase();
+}));
 
 /** 
  * Given an Array of Strings and a Function designed to test the String in some 
@@ -97,7 +118,15 @@ function modifyStrings(strings, modify) {
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
     
-    
+    var testTrue; 
+    for (var i = 0; i < strings.length; i++) {
+        if (test(strings[i]) === true) {
+            testTrue = true;
+        } else {
+            return false;
+        }
+    }
+    return testTrue;
     
     
     // YOUR CODE ABOVE HERE //
