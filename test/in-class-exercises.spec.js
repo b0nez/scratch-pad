@@ -367,7 +367,10 @@ describe('in-class-exercises', function () {
             var contacts = homework.makeContactList();
             contacts.addContact(homework.makeContact('1', 'Max', 'Gaudin'));
             expect(contacts.length()).to.equal(1);
+            contacts.addContact(homework.makeContact('2', 'Berta', 'Gaudin'));
             contacts.removeContact(contacts.find('Max Gaudin'));
+            expect(contacts.length()).to.equal(1);
+            contacts.removeContact(contacts.find('Berta Gaudin'));
             expect(contacts.length()).to.equal(0);
         });
         it('should properly find a contact by full name thru the find API', function () {

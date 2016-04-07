@@ -50,7 +50,16 @@ function makeContact(id, nameFirst, nameLast) {
 
 
 function makeContactList() {
+    /*
+     * You need something here to hold contacts. See length api for a hint:
+     */
     
+    
+    return {
+        length: function() {
+            return contacts.length;
+        }
+    }
 }
 
 

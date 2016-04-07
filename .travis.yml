@@ -7,4 +7,4 @@ notifications:
     - john@operationspark.org
     - max@operationspark.org
   slack: operationspark:IVZ9qgp3Ge6RTeSl7nftvktM
-  webhooks: https://opspark-bootcamp.firebaseIO.com/
+  webhooks: https://greenlight-jfraboni.c9users.io/travisci
