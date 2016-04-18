@@ -8,3 +8,5 @@ notifications:
     - max@operationspark.org
   slack: operationspark:IVZ9qgp3Ge6RTeSl7nftvktM
   webhooks: https://greenlight-jfraboni.c9users.io/api/webhooks/travisci
+  
+script: ./pr.sh

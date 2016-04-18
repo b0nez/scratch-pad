@@ -5,7 +5,7 @@
 /**
  * IN CLASS EXERCISE: MY FIRST PULL REQUEST
  * 
- * The point of this little exercise is to get you use to how we role with 
+ * The point of this little exercise is to get you familar with how we role with 
  * working on and submitting assignments. You'll code, save, run the tests, and 
  * once they're passing, you'll push the changes to your fork, then make a pull
  * request.

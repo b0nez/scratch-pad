@@ -23,10 +23,14 @@
  * TIPS: 
  * 
  *   a. At what threshold does morning become afternoon? What comparison 
- *   can be used to test that the hour is within the morning threshold. It's 
- *   best to be consistant and use the SAME type of comparison for each threshold. 
+ *      can be used to test that the hour is within the morning threshold. 
+ *      It's best to be consistant and use the SAME type of comparison for 
+ *      each threshold. 
  *   
  *   b. Does the last threshold even need an else-if?
+ * 
+ *   c. The tests are CASE sensitive, so you MUST console.log('Good Night!') with
+ *      the exact case.
  * 
  * RUNNING YOUR CODE:
  * 
