@@ -9,7 +9,7 @@
  * 
  * You can run the individual test by entering the following command:
  * 
- *   mocha -R spec --grep first-class-functions
+ *   mocha -R spec -g "#first-class-functions"
  * 
  */
 

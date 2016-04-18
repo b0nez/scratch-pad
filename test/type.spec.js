@@ -3,7 +3,7 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
 
-describe("type", function () {
+describe("#type", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
     });
@@ -11,7 +11,7 @@ describe("type", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var assignment = require('../../../in-class-exercises/module-one/type');
+    var assignment = require('../in-class-exercises/module-one/type');
     describe("isArray", function () {
         it('should return true if given Array, otherwise false', function() {
             expect(assignment.isArray([])).to.be.true;

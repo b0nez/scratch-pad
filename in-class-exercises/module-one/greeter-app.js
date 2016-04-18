@@ -36,7 +36,7 @@
  * 
  * You can run the individual test by entering the following command:
  * 
- *   mocha -R spec --grep greeter-app
+ *   mocha -R spec -g "#greeter-app"
  * 
  */
 

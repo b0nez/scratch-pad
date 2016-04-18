@@ -25,7 +25,7 @@
  * 
  * You can run the individual test by entering the following command:
  * 
- *   mocha -R spec --grep range
+ *   mocha -R spec -g "#range"
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //

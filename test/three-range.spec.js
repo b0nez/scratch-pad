@@ -1,8 +1,8 @@
 var
     expect = require('chai').expect;
     
-describe("range", function () {
-    var homework = require('../../../homework/module-one/three-range');
+describe("#range", function () {
+    var homework = require('../homework/module-one/three-range');
     it('should return a range between the two input integers', function () {
         expect(homework.range(1, 5)).to.eql([1, 2, 3, 4, 5]);
     });

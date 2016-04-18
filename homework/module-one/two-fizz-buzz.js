@@ -14,7 +14,7 @@
  * 
  * You can run the individual test by entering the following command:
  * 
- *   mocha -R spec --grep fizzBuzz
+ *   mocha -R spec -g "#fizzBuzz"
 */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //

@@ -3,8 +3,8 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
 
-describe("contact-list", function () {
-    var homework = require('../../../in-class-exercises/module-one/contact-list');
+describe("#contact-list", function () {
+    var homework = require('../in-class-exercises/module-one/contact-list');
     it('should expose a Function called makeContact that returns an Object with structure: {id: \'1\', nameFirst: \'Max\', nameLast: \'Gaudin\'}', function () {
         expect(homework.makeContact('1', 'Max', 'Gaudin')).to.eql({
             id: '1',

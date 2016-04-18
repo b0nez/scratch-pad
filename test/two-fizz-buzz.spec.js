@@ -3,7 +3,7 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
 
-describe("fizzBuzz", function () {
+describe("#fizzBuzz", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
     });
@@ -11,7 +11,7 @@ describe("fizzBuzz", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var homework = require('../../../homework/module-one/two-fizz-buzz');
+    var homework = require('../homework/module-one/two-fizz-buzz');
     it('should print to stdin the correct results of the fizz buzz exercise', function () {
         homework.fizzBuzz();
         expect(_.flatten(console.log.args)).to.eql(fizzBuzzConsoleCalls);

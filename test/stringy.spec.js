@@ -3,7 +3,7 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
     
-describe("stringy", function () {
+describe("#stringy", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
     });
@@ -11,7 +11,7 @@ describe("stringy", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var assignment = require('../../../in-class-exercises/module-one/stringy');
+    var assignment = require('../in-class-exercises/module-one/stringy');
     describe("length", function () {
         it('should return the length of the input String', function() {
             expect(assignment.length('hello')).to.equal(5);

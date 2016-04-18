@@ -3,7 +3,7 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
     
-describe("first-class-functions", function () {
+describe("#first-class-functions", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
     });
@@ -11,7 +11,7 @@ describe("first-class-functions", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var assignment = require('../../../in-class-exercises/module-one/first-class-functions');
+    var assignment = require('../in-class-exercises/module-one/first-class-functions');
     describe("createGreaterThanFilter`", function () {
         it('should, given a base threshold of type Number, return a Function that tests whether a Number value is greater than the base', function() {
             var greaterThan2 = assignment.createGreaterThanFilter(2);

@@ -3,7 +3,7 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
 
-describe("my-first-pull-request", function () {
+describe("#my-first-pull-request", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
     });
@@ -11,7 +11,7 @@ describe("my-first-pull-request", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var assignment = require('../../../in-class-exercises/module-one/my-first-pull-request');
+    var assignment = require('../in-class-exercises/module-one/my-first-pull-request');
     
     describe("print", function () {
         it('should log the given value', function() {

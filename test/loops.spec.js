@@ -3,7 +3,7 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
     
-describe("loops", function () {
+describe("#loops", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
     });
@@ -11,7 +11,7 @@ describe("loops", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var assignment = require('../../../in-class-exercises/module-one/loops');
+    var assignment = require('../in-class-exercises/module-one/loops');
     var array = [1, 2 , 3];
     var object = {one: 'one', two: 'two', three: 'three'};
     describe("printArrayValues", function () {

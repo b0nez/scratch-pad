@@ -3,7 +3,7 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
 
-describe("greeter-app", function () {
+describe("#greeter-app", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
     });
@@ -11,7 +11,7 @@ describe("greeter-app", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var assignment = require('../../../in-class-exercises/module-one/greeter-app');
+    var assignment = require('../in-class-exercises/module-one/greeter-app');
     it('should print Good Morning! if hour is between 0 and 11', function () {
         assignment.greeter(11);
         expect(console.log.calledWith('Good Morning!')).to.be.true;

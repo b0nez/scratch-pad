@@ -9,7 +9,7 @@
  * 
  * You can run the individual test by entering the following command:
  * 
- *   mocha -R spec --grep type
+ *   mocha -R spec -g "#type"
  *
  */
 
