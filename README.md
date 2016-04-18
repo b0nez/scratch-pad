@@ -16,7 +16,7 @@ In the top-right corner of this page click **Fork**.
 
 ### Setup your Cloud9 Workspace
 
-1. On the **Create New Workspace** page of Cloud9, clone **your** forked repository into a new workspace by copying your repository URL into the **Clone from Git or Mercurial URL** form field, then click the green **Create workspace** button.  
+1. On the **Create New Workspace** page of Cloud9, select **Private workspace**, clone **your** forked repository into a new workspace by copying your repository URL into the **Clone from Git or Mercurial URL** form field, then click the green **Create workspace** button.  
 
     You do not need select any Cloud9 workspace template, ie, HTML5, Node.js - the workspace will be automatically setup for you.
 
