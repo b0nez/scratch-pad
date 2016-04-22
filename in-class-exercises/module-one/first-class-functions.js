@@ -87,7 +87,7 @@ function modifyStrings(strings, modify) {
 
 /** 
  * Given an Array of Strings and a Function designed to test the String in some 
- * way, return true if ALL Strings pass the test.
+ * way and return a Boolean on whether it passed, return true if ALL Strings pass the test.
  * 
  * Imagine you had a list of names, and you wanted to test they all 
  * begin with "C", or they are all exclaimations that end with "!".
