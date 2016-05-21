@@ -9,4 +9,4 @@ notifications:
   slack: operationspark:IVZ9qgp3Ge6RTeSl7nftvktM
   webhooks: https://greenlight.operationspark.org/api/webhooks/travisci
   
-script: ./pr.sh
+

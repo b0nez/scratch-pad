@@ -3,7 +3,7 @@ var
     expect = require('chai').expect,
     sinon = require('sinon');
 
-describe("#fizzBuzz", function () {
+describe("#fizz-buzz", function () {
     beforeEach(function () {
         sinon.spy(console, 'log');
     });

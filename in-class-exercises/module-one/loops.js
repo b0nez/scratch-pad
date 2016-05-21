@@ -9,11 +9,7 @@
  * 
  * You can run the individual test by entering the following command:
  * 
- *   mocha -R spec --grep loops
- * 
- * Otherwise you can run the all tests by running:
- * 
- *   npm test
+ *   mocha -R spec -g "#loops"
  */
 
 /** 

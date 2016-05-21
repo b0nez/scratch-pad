@@ -22,8 +22,7 @@
  * 
  * You can run the individual test by entering the following command:
  * 
- *   mocha -R spec --grep reverseString
- * 
+ *   mocha -R spec -g "#reverse-string"
  */
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
