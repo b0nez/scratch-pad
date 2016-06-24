@@ -30,7 +30,7 @@ describe("#type", function () {
             expect(assignment.isObject([])).to.be.false;
             expect(assignment.isObject(new Date())).to.be.false;
             expect(assignment.isObject(1)).to.be.false;
-            expect(assignment.isCollection(null)).to.be.false;
+            expect(assignment.isObject(null)).to.be.false;
             expect(assignment.isObject('a')).to.be.false;
             expect(assignment.isObject(true)).to.be.false;
         });
