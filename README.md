@@ -1,9 +1,14 @@
-# scratch-pad
-A blank node app for learning JavaScript!
+# Scratch Pad
+
+Practice the basics of JavaScript by passing unit tests.
+
+---
 
 ## JavaScript Only
 
 The scratch-pad project is a Node.js project, which means we write and execute JavaScript independent of a browser in the stand-alone Node.js runtime.  In otherwords, it's _just_ JavaScript - there's no HTML or CSS, and there's no visual aspect to the program except output to the console, which pipes its output to the command-line. Congratulations! This means you're officially a geek. 
+
+---
 
 ## Installation
 
@@ -13,6 +18,7 @@ In the top-right corner of this page click **Fork**.
 
 <img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" width="400">
 
+---
 
 ### Setup your Cloud9 Workspace
 
@@ -20,7 +26,7 @@ In the top-right corner of this page click **Fork**.
 
     You do not need select any Cloud9 workspace template, ie, HTML5, Node.js - the workspace will be automatically setup for you.
 
-    <img src="img/new-workspace.gif" width="750">
+    <img src="https://raw.githubusercontent.com/OperationSpark/images/master/scratch-pad/new-workspace.gif" width="750">
 
 
 2. Once you are setup in your workspace, go to the command-line and paste the following command:
@@ -31,11 +37,15 @@ In the top-right corner of this page click **Fork**.
     
         npm install
     
-    <img src="img/add-upstream.gif" width="750">
+    <img src="https://raw.githubusercontent.com/OperationSpark/images/master/scratch-pad/add-upstream.gif" width="750">
+
+---
 
 ### Warning
 
 Whatever you do, please DO NOT move or delete files in this workspace. Files are required to reside in the current directory structure. Bad things will happen if you delete or move files around!
+
+---
 
 ### Sharing is Caring
 
@@ -49,7 +59,9 @@ If you don't know them, ask your teacher and TA to post their Cloud9 usernames i
 * Max's username: maxgaudin
 * John's username: jfraboni
 
-<img src="img/share-workspace.gif" width="750">
+<img src="https://raw.githubusercontent.com/OperationSpark/images/master/scratch-pad/share-workspace.gif" width="750">
+
+---
 
 ## app.js
 
@@ -67,6 +79,7 @@ Note, at the top of the `app.js` file, there's the <a href="https://github.com/O
 
 Also, below the shebang, note the `'use strict';` directive - this tells node we want to run our JavaScript in strict mode, which, among other things, will prevent our program from silently failing on certain errors. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" target="_blank">Read more about strict mode here...</a>
 
+---
 
 ## Getting Started with Debugging
 
@@ -76,12 +89,15 @@ It is extremely important for you to begin debugging as you work. It's important
 
 <a href="https://docs.c9.io/docs/debugging-your-code" target="_blank">Watch this video on getting started with Node.js debugging in Cloud9</a>. This is how you should inspect your work in scratch-pad as you complete your homework assignments.
 
+---
 
 ## Homework & Exercises
 
 Your homework assignments are located in JavaScript (.js) files in the directory `homework/module-x`, where `x` is whatever module you are currently undertaking.
 
 The assignments are ordered, so on day one of the module, start with the JavaScript file that begins with `one`, ie, `one-reverse-string.js`. On day two, you will complete the assignment in the file, `two-x.js`, where `x` is the name of the assignment.
+
+---
 
 ### Running your Code
 
@@ -106,6 +122,8 @@ As you code your solutions and save your work, you have three options for runnin
         ./homework/module-one/one-reverse-string.js
     
 
+---
+
 ### Submitting Your Homework, Exercises and Quizzes
 
 You MUST submit your homework by 5:30pm the day it is due by doing a pull request.  See detailed instructions in our Bootcamp on how to submit your homework by doing a pull request, or, ask for help.
@@ -124,4 +142,4 @@ To submit your homework
 
 3. Finally, go to YOUR FORKED GitHub repository on GitHub, and make a _pull request_.  When making the pull request, in the first two dropdown boxes, the first box should be set to Operation Spark, and the second box MUST be YOUR branch, so select your GitHub username from the second dropdownbox.  The third and forth box should be your GitHub username and master.  Check it out:
 
-<img src="img/pull-request-submitting-assignments.png" width="750">
+<img src="https://raw.githubusercontent.com/OperationSpark/images/master/scratch-pad/pull-request-submitting-assignments.png" width="750">
